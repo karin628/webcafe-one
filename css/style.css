@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+color: #333;
+    background-color: #faf9f4;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h2,h3,h4,h5,h6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+img{
+    max-width: 100%;
+    
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+ul{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+/* 見出し */
+.heading{
+    margin-bottom: 20px;
+    font-family: 'Philosopher',serif;
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 210px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.nav{
+    margin-bottom: 80px;
+}
+
+.main-nav {
+display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+.main-nav li {
+    padding: 0 20px;
+    border-left: 1px solid #333;
+    margin-bottom: inherit;
+
+}
+.main-nav li:first-child{
+    border-left: none;
+}
+
+
+
+/*セクション*/
+.section about{
+    margin-bottom: 80px;
+}
+
+.about{
+    text-align: center;
+}
+.about p{
+    font-size: 18px;
+    line-height: 2.1;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* MENU
+------------------------------- */
+
+
+.menu-list{
+    text-align: center;
+}
+.menu-list li{
+    display: block;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 2.5;
+    text-align: center;
+    list-style: disc;
+}
+
+
+
+.menu-content .page-title{
+    text-align: center;
+}
+.menu-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 2%;
+    margin-bottom: 50px;
+}
+
+
+
+/* 店舗情報・地図 */
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+#location .wrapper{
+    display: flex;
+    justify-content: space-between;}
+
+.location-info{
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+    width: 22%;
+}
+.sub-title{
+    display: block;
+    margin: 15px 0;
+    font-size: 22px;
+    letter-spacing: 0;
+}
+.location-map{
+    margin: 0;
+    width: 74%;
+    margin-bottom: 20px;
+}
+
+
+.location-info p{
+    padding: 12px 10px;
+}
+
+
+
+
+/* フッター
+------------------------------- */
+.footer {
+    background: #afa4a0;
+    text-align: center;
+    padding: 10px;
+}
+.footer-container{
+    display: grid;
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+.footer-logo{
+    margin: 0;
+
+}
+footer img{
+    float: left;
+}
+
+.footer-nav-list{
+    display: flex;
+    float: right;
+    
+}
+.footer-nav li{
+    margin-right: 40px;
+}
+.footer-nav a{
+    color: #fff;
+    text-transform: uppercase;
+}
+/*コピーライト*/
+.copyright{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+
+
+}
+.copyright small{
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+  
+    .wrapper {
+        width: 100%;;
+    }
+
+
+    .main-nav li {
+        padding: 0 10px;
+    }
+    
+    .about p {
+    font-size: 16px;
+    padding: 0 18px;
+    }
+    .menu-list li {
+        font-size: 16px;
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #location .wrapper {
+        flex-direction: column;
+    }   
+    .sub-title {
+        display: ruby-text;
+        padding: 0px 10px;
+    }
+
+    .location-info {
+         width: 100%;
+    
+    }
+    .location-map{
+        width: 100%;
+    
+    }
+    .location-info p {
+        padding: 0px 10px;
+   
+   }
+   
+
+
+   .footer {
+    max-width: 100%;
+    font-size: 15px;
+
+  }
+  
+  .footer-nav-list {
+  display: flex;
+  margin: 0 10px;
+  }
+  
+  .footer-nav-list li {
+    display: inline-block;
+  }
+  
+  .footer-nav-list li:not(:last-child) {
+    margin-right: 16px;
+  }
+  
+  .footer-logo {
+    display: inline-block;
+
+  }
+  .footer img{
+    max-width: 80%;
+    display: inline-block;
+  }
+  
+    .footer-container {
+      justify-content: space-between;
+    }
+  
+    .copyright {
+        padding: inherit;
+    }
+    
+    
+
+}
